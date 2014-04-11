@@ -15,17 +15,4 @@
 @dynamic urgency;
 @dynamic name;
 
-
-- (void) awakeFromFetch
-{
-    [super awakeFromFetch];
-    
-    
-}
-
-- (void) awakeFromInsert
-{
-    
-}
-
 @end

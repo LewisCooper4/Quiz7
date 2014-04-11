@@ -16,7 +16,7 @@
 		1ED0A07B18F32CE800A9FC3A /* Quiz7AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED0A07A18F32CE800A9FC3A /* Quiz7AppDelegate.m */; };
 		1ED0A07E18F32CE800A9FC3A /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ED0A07C18F32CE800A9FC3A /* MainStoryboard.storyboard */; };
 		1ED0A08118F32CE800A9FC3A /* Quiz7.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1ED0A07F18F32CE800A9FC3A /* Quiz7.xcdatamodeld */; };
-		1ED0A08418F32CE800A9FC3A /* QuYESiz7MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED0A08318F32CE800A9FC3A /* QuYESiz7MasterViewController.m */; };
+		1ED0A08418F32CE800A9FC3A /* Quiz7MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED0A08318F32CE800A9FC3A /* Quiz7MasterViewController.m */; };
 		1ED0A08718F32CE800A9FC3A /* Quiz7DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED0A08618F32CE800A9FC3A /* Quiz7DetailViewController.m */; };
 		1ED0A08F18F32D2E00A9FC3A /* Task.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED0A08E18F32D2E00A9FC3A /* Task.m */; };
 /* End PBXBuildFile section */
@@ -36,7 +36,7 @@
 		1ED0A07D18F32CE800A9FC3A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		1ED0A08018F32CE800A9FC3A /* Quiz7.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Quiz7.xcdatamodel; sourceTree = "<group>"; };
 		1ED0A08218F32CE800A9FC3A /* Quiz7MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Quiz7MasterViewController.h; sourceTree = "<group>"; };
-		1ED0A08318F32CE800A9FC3A /* QuYESiz7MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuYESiz7MasterViewController.m; sourceTree = "<group>"; };
+		1ED0A08318F32CE800A9FC3A /* Quiz7MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Quiz7MasterViewController.m; sourceTree = "<group>"; };
 		1ED0A08518F32CE800A9FC3A /* Quiz7DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Quiz7DetailViewController.h; sourceTree = "<group>"; };
 		1ED0A08618F32CE800A9FC3A /* Quiz7DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Quiz7DetailViewController.m; sourceTree = "<group>"; };
 		1ED0A08D18F32D2E00A9FC3A /* Task.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Task.h; sourceTree = "<group>"; };
@@ -93,7 +93,7 @@
 				1ED0A07A18F32CE800A9FC3A /* Quiz7AppDelegate.m */,
 				1ED0A07C18F32CE800A9FC3A /* MainStoryboard.storyboard */,
 				1ED0A08218F32CE800A9FC3A /* Quiz7MasterViewController.h */,
-				1ED0A08318F32CE800A9FC3A /* QuYESiz7MasterViewController.m */,
+				1ED0A08318F32CE800A9FC3A /* Quiz7MasterViewController.m */,
 				1ED0A08518F32CE800A9FC3A /* Quiz7DetailViewController.h */,
 				1ED0A08618F32CE800A9FC3A /* Quiz7DetailViewController.m */,
 				1ED0A07F18F32CE800A9FC3A /* Quiz7.xcdatamodeld */,
@@ -182,7 +182,7 @@
 				1ED0A07718F32CE800A9FC3A /* main.m in Sources */,
 				1ED0A07B18F32CE800A9FC3A /* Quiz7AppDelegate.m in Sources */,
 				1ED0A08118F32CE800A9FC3A /* Quiz7.xcdatamodeld in Sources */,
-				1ED0A08418F32CE800A9FC3A /* QuYESiz7MasterViewController.m in Sources */,
+				1ED0A08418F32CE800A9FC3A /* Quiz7MasterViewController.m in Sources */,
 				1ED0A08718F32CE800A9FC3A /* Quiz7DetailViewController.m in Sources */,
 				1ED0A08F18F32D2E00A9FC3A /* Task.m in Sources */,
 			);

@@ -61,7 +61,7 @@
     // there is a warning here but without this line the text field does not resign first responder
     [taskNameTextField setDelegate:self];
     
-    [self configureView];
+    //[self configureView];
 }
 
 - (void)viewDidUnload
@@ -84,6 +84,8 @@
     [currentTask setName:taskNameTextField.text];
     [currentTask setUrgency:urgencySlider.value * 10.0];
     [currentTask setTimeStamp:datePicker.date];
+    
+    [self.navigationController popViewControllerAnimated:YES];
     
     //[self.presentingViewController dismissViewControllerAnimated:NO completion:dismissBlock];
     

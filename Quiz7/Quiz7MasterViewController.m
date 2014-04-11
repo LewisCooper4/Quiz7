@@ -37,6 +37,11 @@
     // Release any retained subviews of the main view.
 }
 
+- (void) viewDidAppear:(BOOL)animated
+{
+    [self.managedObjectContext save:nil];
+}
+
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
@@ -82,6 +87,7 @@
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
     
+    /*
     Task *task = [self.fetchedResultsController objectAtIndexPath:indexPath];
     
     [cell.textLabel setText:[task name]];
@@ -94,6 +100,11 @@
     [cell.detailTextLabel setText:[NSString stringWithFormat:@"Urgency: %.0f %@", [task urgency], formattedDate]];
     
     //[self configureCell:cell atIndexPath:indexPath];
+     
+     */
+    
+    [self configureCell:cell atIndexPath:indexPath];
+    
     return cell;
 }
 
@@ -134,8 +145,8 @@
         //[[segue destinationViewController] setDetailItem:object];
         
         [[segue destinationViewController] setDismissBlock:^{            
-            //[self.managedObjectContext save:nil];
-            //[self.fetchedResultsController performFetch:nil];
+            [self.managedObjectContext save:nil];
+            [self.fetchedResultsController performFetch:nil];
             [[self tableView] reloadData];
         }];
     }
@@ -242,8 +253,16 @@
 
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
 {
-    //NSManagedObject *object = [self.fetchedResultsController objectAtIndexPath:indexPath];
-    //cell.textLabel.text = [[object valueForKey:@"timeStamp"] description];
+    Task *task = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    
+    cell.textLabel.text = [[task valueForKey:@"name"] description];
+    
+    // get the proper format for the date
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateStyle:NSDateFormatterFullStyle];
+    NSString *formattedDate = [formatter stringFromDate:task.timeStamp];
+    
+    [cell.detailTextLabel setText:[NSString stringWithFormat:@"Urgency: %.0f %@", [task urgency], formattedDate]];
 }
 
 @end
